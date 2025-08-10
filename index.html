@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LG Chem | Agile Decision Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans KR', 'sans-serif'],
+            },
+            colors: {
+              'brand-blue': '#0033A0',
+              'brand-red': '#A50034',
+              'brand-gray': '#A8A9AD',
+              'night-sky': '#111827',
+              'slate-gray': '#374151',
+              'light-slate': '#4B5563',
+              'ghost-white': '#F9FAFB',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
+  }
+}
+</script>
+<style>
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="text-ghost-white">
+    <div class="fixed inset-0 -z-10 h-full w-full bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1590396113854-35368a0a9e70?q=80&w=2574&auto=format&fit=crop')"></div>
+    <div class="fixed inset-0 -z-10 h-full w-full bg-gray-900/70"></div>
+    <div id="root" class="relative z-0"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
